@@ -40,11 +40,6 @@ class dice_xcuitest_demoUITests: XCTestCase {
         }
         
         XCTAssert(LoginScreens.buttons.profile.exists, "Profile button is not visible")
-        
-       
-        
-        
-        
     }
 
 }
