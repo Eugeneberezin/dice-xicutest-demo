@@ -31,7 +31,7 @@ class dice_xcuitest_demoUITests: XCTestCase {
     }
 
     func testLogin() {
-        LoginScreens.logIn(email: TestData.email, password: TestData.password)
+        LoginScreens.logIn(email: TestData.email, password: TestData.password, testCase: self)
         
         guard LoginScreens.buttons.profile.waitForExistence(timeout: 30) else {
             XCTFail("User is not logged in. Profile Button is not visisble")

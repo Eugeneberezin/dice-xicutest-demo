@@ -15,6 +15,7 @@
 		054245E922B731EA002C8886 /* dice_xcuitest_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054245E822B731EA002C8886 /* dice_xcuitest_demoUITests.swift */; };
 		054245F422B736F0002C8886 /* LoginScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054245F322B736F0002C8886 /* LoginScreens.swift */; };
 		054245F622B73B29002C8886 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054245F522B73B29002C8886 /* TestData.swift */; };
+		0599940822C83FFA0067809F /* XCTestCase+SystemAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0599940722C83FFA0067809F /* XCTestCase+SystemAlerts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		054245EA22B731EA002C8886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054245F322B736F0002C8886 /* LoginScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreens.swift; sourceTree = "<group>"; };
 		054245F522B73B29002C8886 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		0599940722C83FFA0067809F /* XCTestCase+SystemAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XCTestCase+SystemAlerts.swift"; path = "../../../../iOS course/XCTestCase+SystemAlerts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		054245E722B731EA002C8886 /* dice-xcuitest-demoUITests */ = {
 			isa = PBXGroup;
 			children = (
+				0599940722C83FFA0067809F /* XCTestCase+SystemAlerts.swift */,
 				054245E822B731EA002C8886 /* dice_xcuitest_demoUITests.swift */,
 				054245EA22B731EA002C8886 /* Info.plist */,
 				054245F322B736F0002C8886 /* LoginScreens.swift */,
@@ -214,6 +217,7 @@
 			files = (
 				054245F622B73B29002C8886 /* TestData.swift in Sources */,
 				054245E922B731EA002C8886 /* dice_xcuitest_demoUITests.swift in Sources */,
+				0599940822C83FFA0067809F /* XCTestCase+SystemAlerts.swift in Sources */,
 				054245F422B736F0002C8886 /* LoginScreens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

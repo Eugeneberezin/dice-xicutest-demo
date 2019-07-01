@@ -37,13 +37,19 @@ class LoginScreens {
                           settings: diceApp.navigationBars["Profile"].buttons["Settings"],
                           signOut: diceApp.tables.buttons["Settings_Sign_Out_Button"],
                           done: diceApp.navigationBars["Settings"].buttons["Done"])
-    static func logIn(email: String, password: String) {
+    
+    
+    static func logIn(email: String, password: String, testCase: XCTestCase) {
+        let systemAlertHandler = testCase.prepareToHandleAlerts(.locationPermission, .notificationsPermission)
+       
+        testCase.handleAlerts(with: systemAlertHandler)
         buttons.homePageSignIn.tap()
         textFields.email.tap()
         textFields.email.typeText(email)
         textFields.password.tap()
         textFields.password.typeText(password)
         buttons.signIn.tap()
+        
     
     }
     
