@@ -40,9 +40,9 @@ class LoginScreens {
     
     
     static func logIn(email: String, password: String, testCase: XCTestCase) {
-        let systemAlertHandler = testCase.prepareToHandleAlerts(.locationPermission, .notificationsPermission)
-       
-        testCase.handleAlerts(with: systemAlertHandler)
+//        let systemAlertHandler = testCase.prepareToHandleAlerts(.locationPermission, .notificationsPermission)
+//
+//        testCase.handleAlerts(with: systemAlertHandler)
         buttons.homePageSignIn.tap()
         textFields.email.tap()
         textFields.email.typeText(email)

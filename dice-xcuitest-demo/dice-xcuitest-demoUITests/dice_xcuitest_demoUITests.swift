@@ -16,6 +16,13 @@ class dice_xcuitest_demoUITests: XCTestCase {
         
         continueAfterFailure = false
         diceApp.launch()
+        
+        addUIInterruptionMonitor(withDescription: "System Dialog") {
+            (alert) -> Bool in
+            alert.buttons["Allow"].tap()
+            return true
+        }
+        diceApp.tap()
     }
 
     override func tearDown() {
